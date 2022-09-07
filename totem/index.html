@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tarefa faculdade</title>
+  <link rel="stylesheet" href="build/style.css">
+  <link rel="stylesheet" type="text/css" href="build/style.css">
+</head>
+
+<body>
+
+  <div class="materialContainer">
+    <div class="box">
+      <img src="D:\J.A 4 semestre\imgs\Logo-Grupo-Simoldes-removebg-preview.png" width="287" height="165">
+      <div class="title">Bem vindo(a),</div>
+      <div class="title">Por favor escolha uma opção.</div>
+
+      <div class="button login">
+        <form action="./justPonto.html">
+
+          <br><br>
+          <button id="butaoPonto">Justificativa de ponto </button>
+        </form>
+      </div>
+      <br><br><br><br>
+      <div class="button login">
+        <form action="./justFerias.html">
+
+          <button id="butaoFerias">Solicitação de férias &nbsp;</button>
+      </div>
+
+      </form>
+
+      <br><br><br><br>
+    </div>
+  </div>
+
+  <script>
+    const butaoPonto = document.getElementById("butaoPonto");
+    const butaoFerias = document.getElementById("butaoFerias");
+
+    butaoPonto.onclick = function (e) {
+      e.preventDefault();
+      localStorage.clear();
+      window.location.href = ("./justPonto.html")
+    }
+    butaoFerias.onclick = function (e) {
+      e.preventDefault();
+      localStorage.clear();
+      window.location.href = ("./justFerias.html")
+    }
+
+
+  </script>
+</body>
+
+</html>
