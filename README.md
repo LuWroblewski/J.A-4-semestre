@@ -2,5 +2,5 @@
 
 Trabalho feito no quarto semestre da faculdade de sistemas da informação
 
-A pasta #totem# se refere ao totem aonde o colaborador vai insirir os dados,
-a pasta #gerencia e RH# se refere aonde a gerencia vai acessar as solicitações dos colaboradores feitas pelo totem. 
+A pasta **totem** se refere ao totem aonde o colaborador vai insirir os dados,
+a pasta **gerencia e RH** se refere aonde a gerencia vai acessar as solicitações dos colaboradores feitas pelo totem. 
