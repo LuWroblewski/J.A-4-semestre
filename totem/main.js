@@ -136,7 +136,8 @@ button5.onclick = function (e) {
             motivoPonto: motP,
             descricao: desP,
             hExtras: hrP,
-            observacao: obP
+            observacao: obP,
+            aprovado: ""
         }),
     })
 
