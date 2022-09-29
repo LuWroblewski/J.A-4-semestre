@@ -11,7 +11,7 @@ router.post("/", async (req, res) => {
 
   //req body
 
-  const { matriculaPonto, nomePonto, areaAtuacao, setorPonto, dataJust, motivoPonto, entrada, saida, descricao, hExtras, observacao } = req.body
+  const { matriculaPonto, nomePonto, areaAtuacao, setorPonto, dataJust, motivoPonto, entrada, saida, descricao, hExtras, observacao, aprovado } = req.body
 
   const justPonto2 = {
     matriculaPonto,
@@ -24,8 +24,8 @@ router.post("/", async (req, res) => {
     saida,
     descricao,
     hExtras,
-    observacao
-
+    observacao,
+    aprovado
   }
 
   try {
