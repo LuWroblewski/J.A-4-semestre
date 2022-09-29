@@ -13,7 +13,7 @@ const justPontoSchema = new mongoose.Schema({
     descricao: String,
     hExtras: String,
     observacao: String,
-
+    aprovado: String
 });
 
 const justPonto = mongoose.model("justPonto", justPontoSchema);
