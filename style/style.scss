@@ -1,0 +1,214 @@
+body {
+	background-image: url(https://64.media.tumblr.com/7fbf54c0aa82204968bf579f4ccf3610/d01f3aba991f10f2-c3/s1280x1920/19a656ea4817f8e61dc0eb05c24024c65845d3da.gifv);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+}
+
+.materialContainer, .materialContainerMenu {
+	width: 100%;
+	max-width: 580px;
+	position: relative;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.box {
+		position: absolute;
+		top: 100px;
+		height: 500px;
+		float: left;
+		padding: 5px 5px 35px 15px;
+		background: #fff;
+		border-radius: 10px;
+		overflow: hidden;
+		transition: 0.5s;
+
+		.title {
+			width: 100%;
+			float: left;
+			font-size: 25px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			color: #ED2553;
+			position: relative;
+			text-align: center;
+		}
+		
+		#tabelaPedidos,#tabelaPedidos2 {
+			border-radius: 5px;
+			font-size: 12px;
+			font-weight: normal;
+			border: none;
+			border-collapse: collapse;
+			width: 995px;
+			word-wrap: break-word;
+			background-color: white;
+			
+		}
+		
+		#tabelaPedidos td, #tabelaPedidos th, #tabelaPedidos2 td, #tabelaPedidos2 th {
+			text-align: center;
+			padding: 8px;
+		}
+		
+		#tabelaPedidos td, #tabelaPedidos2 td {
+			border-right: 1px solid #f8f8f8;
+			font-size: 12px;
+		}
+
+		#tabelaPedidos th, #tabelaPedidos2 th{
+			color: #000000;
+			background: #9996963b;
+			font-size: 15px;
+		}
+		tr:hover { 
+			background-color: #cccccc 
+		}
+		
+		#tabelaPedidos tr:nth-child(even), #tabelaPedidos2 tr:nth-child(even){
+			background: #F8F8F8;
+			&:hover { 
+				background-color: #cccccc 
+			}
+		}
+
+		#tabelaPedidos button {
+			background-color: #ff0000; 
+			border: solid;
+			border-radius: 7px;
+			border-color: #ff0000;
+			color: white;
+			padding: 7px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			width: 97px;
+			&:nth-child(odd){
+				background-color: #07b874; 
+				border-color: #07b874;
+			}
+
+		   &:hover {
+			background-color: #ffffff;
+			color: #ff0000;
+			border: solid;
+			border-radius: 5px;
+			&:nth-child(odd){
+				color: #07b874; 
+			}
+			}
+		
+	}
+	#tabelaPedidos2 button {
+		background-color: #07b874; 
+		border: solid;
+		border-radius: 7px;
+		border-color: #07b874;
+		color: white;
+		padding: 7px 16px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		transition-duration: 0.4s;
+		
+		cursor: pointer;
+		width: 97px;
+		&:nth-child(odd){
+			background-color: #ff0000; 
+			border-color: #ff0000;
+		}
+
+	   &:hover {
+		background-color: #ffffff;
+		color: #07b874;
+		border: solid;
+		border-radius: 5px;
+		&:nth-child(odd){
+			color: #ff0000; 
+		}
+		}
+	
+}
+	}
+
+
+		.box-menu {
+
+			position: relative;
+			width: 220px;
+			top: 100px;
+			height: 490px;
+			right: 230px;
+			float: left;
+			padding: 15px 5px 35px 15px;
+			background: rgb(255, 229, 229);
+			overflow: hidden;
+			transition: 0.5s;
+			border-top-left-radius: 7px;
+			border-bottom-left-radius: 7px;
+			text-align: center;
+			.title-Menu {
+				width: 100%;
+				float: left;
+				font-size: 25px;
+				font-weight: 700;
+				letter-spacing: 2px;
+				color: #ED2553;
+				position: relative;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			.button-menu {
+				padding: 15px;
+				margin-top: 15px;
+				background: rgb(255, 229, 229);
+				display: list-item;
+				transform: perspective(1px) translateZ(0);
+				position: relative;
+				transition: color 0.3s;
+				cursor: pointer;
+				font-size: 16px;
+				text-align: center;
+				border-radius: 5px;
+				width: 205px;
+			  }
+			  .button-menu:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				background: #01ff9d;
+				transform: scaleX(0);
+				transform-origin: 0 50%;
+				transition: transform 0.3s ease-out;
+			  }
+			  .button-menu:hover {
+				color: rgb(0, 0, 0);
+			  }
+			  .button-menu:hover:before {
+				transform: scaleX(1);
+			  }
+}
+	}
+
