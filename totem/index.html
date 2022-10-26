@@ -2,62 +2,144 @@
 <html lang="PT-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tarefa faculdade</title>
-  <link rel="stylesheet" href="build/style.css">
-  <link rel="stylesheet" type="text/css" href="build/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarefa faculdade</title>
+    <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" type="text/css" href="build/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
 </head>
 
 <body>
+    
 
-  <div class="materialContainer">
-    <div class="box">
-      <img src="D:\J.A 4 semestre\imgs\Logo-Grupo-Simoldes-removebg-preview.png" width="287" height="165">
-      <div class="title">Bem vindo(a),</div>
-      <div class="title">Por favor escolha uma opção.</div>
+    <div class="materialContainer">
+        
+        <div class="box">
+            <div id="overlay" >
+                <div id="block_overlay">
+                <p id="text_overlay"> <img src="./imgs/check.gif" alt="check" id="check" top="5000px" ></p>
+                <p id="text_overlay"> Solicitação enviada para a gerencia</p>
+                <p id="text_overlay"> Uma copia foi enviada ao seu email :)</p>
+            </div>
+            </div>
 
-      <div class="button login">
-        <form action="./justPonto.html">
+            <img src="./imgs/Logo SPB recortado.jpg" width="400" height="83"  style="margin-bottom: 20px; margin-top: 30px; ">
+            <div class="title">Bem vindo(a)</div>
+            <div class="title">Por favor escolha uma opção.</div>
+      <div id = "menu">
+            <div class="button login2">      
+                <br><br>
+                <button id="butaoPonto"><i class="fa">&#xf304;</i> Justificativa de ponto </button>
 
-          <br><br>
-          <button id="butaoPonto">Justificativa de ponto </button>
-        </form>
-      </div>
-      <br><br><br><br>
-      <div class="button login">
-        <form action="./justFerias.html">
+            </div>
+            <br><br><br><br>
 
-          <button id="butaoFerias">Solicitação de férias &nbsp;</button>
-      </div>
+            <div class="button login2">      
+                <button id="butaoFerias"><i class="fa">&#xf304;</i> Solicitação de férias &nbsp;</button>
+            </div>
+        </div>
+      
 
-      </form>
 
-      <br><br><br><br>
+        <form action= "" method="post" id="justPonto">
+            <p><input placeholder = "&#xf2c2; Matricula:" type="text" id="POST-matriculaPonto" name="matriculaPonto"></p>
+            <p><input placeholder = "&#xf007; Nome completo:" type="text" id="POST-nomePonto" name="nomePonto"></p>
+            <p><input placeholder = "&#xf007; Email:" type="text" id="POST-emailPonto" name="email"></p>
+            <p><select id="POST-areaAtuacaoPonto" name="areaAtuacaoPonto"></p>
+                <option value="">Área de atuação</option>
+                <option value="administrativo">administrativo</option>
+                <option value="produção">Produção</option>
+                <option value="TI">TI</option>
+                <option value="contabilidade">Contabilidade</option>
+                <option value="juridico">Juridico</option>
+                <option value="logistica">Logistica</option>
+            </select>
+            <p> <input placeholder = "&#xf0b1; Setor:" type="text" id="POST-setorPonto" name="setorPonto"></p>
+            <div  class="button login">
+                <button id="button0">&#xf060; Voltar</button> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <button  id="button1">Proximo &#xf061;</button>
+            </div>
+            </form>
+
+            <form action= "" method="post" id="justPonto2">
+                <p>&#xf133; Data da justificativa: <input type="date" id="POST-dataJust" name="dataJust"></p>
+                <p>&#xf017; Entrada: <input type="time" id="POST-entrada" name="entrada"></p>
+                <p>&#xf017; Saida: <input type="time" id="POST-saida" name="saida"></p>
+                <div class="button login">
+                    <button id="button2">&#xf060; Voltar</button> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <button id="button3">Proximo &#xf061;</button> 
+                    </div>
+            </form>
+                <form action= "" method="post" id="justPonto3">
+                <p> <select id="POST-motivoPonto" name="motivoPonto"></p>
+                    <option value="">Motivo da Solicitação</option>
+                    <option value="falta">Falta</option>
+                    <option value="atraso">Atraso</option>
+                    <option value="saida Antecipada">Saida antecipada</option>
+                    <option value="horas Extras">Horas extras</option>
+                    <option value="mudança Hora">Mudança de horario</option>
+                    <option value="outros">outros</option>
+                </select>
+                <p> <input placeholder = "&#xf573; Motivo da justificativa:" type="text" id="POST-descricao" name="descricao"></p>
+                <p>&#xf017; Horas extras: <input  type="time" id="POST-hExtras" name="hExtras"></p>
+                <p><input placeholder = "&#xf005; Observações:" type="text" id="POST-observacao" name="observacao"></p>
+
+                <div class="button login">
+                    <button id="button4">&#xf060; Voltar </button>   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <button type="submit"   id="button5" >Enviar &#xf00c; </button>
+                    </div>
+            </form>
+            
+        
+            <form action="" method="post" id="justFerias" >
+                <p><input placeholder="&#xf2c2; Matricula:" type="text" id="POST-MatriculaFerias" name="MatriculaFerias"></p>
+                <p><input placeholder="&#xf007; Nome completo:" type="text" id="POST-nomeFerias" name="nomeFerias"></p>
+                <p><input placeholder = "&#xf007; Email:" type="text" id="POST-emailFerias" name="email"></p>
+                <p> <select id="POST-areaAtuacaoFerias" name=""></p>
+                <option value="">Área de atuação:</option>
+                <option value="administrativo">administrativa</option>
+                <option value="produção">Produção</option>
+                <option value="ti">TI</option>
+                <option value="contabilidade">Contabilidade</option>
+                <option value="juridico">Juridico</option>
+                </select>
+                <p> <input placeholder="&#xf0b1; Setor:" type="text" id="POST-setorFerias" name="setorFerias"></p>
+                <div class="button login">
+                    <button id="button6">&#xf060; Voltar</button>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <button id="button7"> Proximo &#xf061;</button>
+                </div>
+            </form>
+            <form action="" method="post" id="justFerias2">
+                <p> &#xf133;  Data de início das férias: <input type="date" id="POST-dataInicio" name="dataInicio"></p>
+                <p> &#xf133; Data de fim das férias: <input type="date" id="POST-dataFim" name="dataFim"></p>
+                <p><select id="POST-motivoFerias" name="motivoFerias"></p>
+                <option value="">Motivo da Solicitação: </option>
+                <option value="tempo">tempo</option>
+                <option value="abono Pecuniario">Abono pecuniário</option>
+                <option value="ferias Individuais">Férias Individuais</option>
+                <option value="ferias Coletivas">Férias coletivas</option>
+                <option value="outros">outros</option>
+                </select>
+                <p> &#xf073; tempo total de ferias: <input type="number" id="POST-tempoTotal" name="tempoTotal"></p>
+                <div class="button login">
+                    <button id="button8">&#xf060; Voltar </button>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <button type="submit" id="button9" > Enviar &#xf00c;</button>
+                </div>
+            </form>
+
+        </div>
+
     </div>
-  </div>
 
-  <script>
-    const butaoPonto = document.getElementById("butaoPonto");
-    const butaoFerias = document.getElementById("butaoFerias");
-
-    butaoPonto.onclick = function (e) {
-      e.preventDefault();
-      localStorage.clear();
-      window.location.href = ("./justPonto.html")
-    }
-    butaoFerias.onclick = function (e) {
-      e.preventDefault();
-      localStorage.clear();
-      window.location.href = ("./justFerias.html")
-    }
-
-
-  </script>
+        
+    <script src="./index.js"></script>
 </body>
 
 </html>
