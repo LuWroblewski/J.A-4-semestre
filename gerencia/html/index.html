@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarefa faculdade</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script src="https://kit.fontawesome.com/c22522d09b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+</head>
+
+<body>
+    <div class="materialContainerMenu">
+
+        <div class="box-menu">
+            <div class="title-Menu">Menu</div>
+            <button class="button-menu" id="btn-Ponto"><i class="fa-solid fa-arrow-right"></i> Justificativa de
+                ponto</button>
+            <button class="button-menu" id="btn-Ferias"><i class="fa-solid fa-arrow-right"></i> Solicitação de
+                Ferias</button>
+            <button class="button-menu" id="btn-Graficos"><i class="fa-solid fa-chart-column"></i> Graficos</button>
+
+        </div>
+
+    </div>
+
+    <div class="materialContainer">
+
+        <div class="box">
+            <img src="../imgs/Logo SPB recortado.jpg" width="400" height="83"  style="margin-bottom: 20px; margin-top: 30px; ">
+            <div class="title" id="title">Justificativas de ponto</div>
+
+            <br><br>
+                <table id="tabelaPedidos">
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nome</th>
+                        <th>Area de atuação</th>
+                        <th>Setor</th>
+                        <th>Data da justificativa</th>
+                        <th>Entrada</th>
+                        <th>Saida</th>
+                        <th>Motivo</th>
+                        <th>Descrição</th>
+                        <th>Horas extras</th>
+                        <th>Observação</th>
+                        <th>Aprovados</th>
+
+                    </tr>
+
+                </table>
+                <table id="tabelaPedidos2">
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nome</th>
+                        <th>Area de atuação</th>
+                        <th>Setor</th>
+                        <th>Data de inicio</th>
+                        <th>Data do &nbsp; fim &nbsp; </th>
+                        <th>Motivo</th>
+                        <th>tempoTotal</th>
+                        <th>Aprovados</th>
+
+                    </tr>
+                </table>
+
+
+
+            <div id="container" ></div>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="../main.js"></script>
+    <script src="../index.js"></script>
+
+</body>
+
+</html>
