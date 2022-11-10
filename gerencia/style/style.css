@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://64.media.tumblr.com/7fbf54c0aa82204968bf579f4ccf3610/d01f3aba991f10f2-c3/s1280x1920/19a656ea4817f8e61dc0eb05c24024c65845d3da.gifv);
+  background-image: url(https://i2.wp.com/cdn.statically.io/img/wallpapercave.com/wp/wp2757874.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,19 +38,28 @@ body {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #ED2553;
+  color: #001f66;
   position: relative;
   text-align: center;
 }
 .materialContainer .box #tabelaPedidos, .materialContainer .box #tabelaPedidos2, .materialContainerMenu .box #tabelaPedidos, .materialContainerMenu .box #tabelaPedidos2 {
+  position: relative;
+  height: 350px;
+  overflow: auto;
   border-radius: 5px;
   font-size: 12px;
   font-weight: normal;
   border: none;
   border-collapse: collapse;
-  width: 995px;
+  width: 1150px;
   word-wrap: break-word;
   background-color: white;
+  display: block;
+  transition: 0.15s;
+}
+.materialContainer .box #tabelaPedidos2, .materialContainerMenu .box #tabelaPedidos2 {
+  display: block;
+  top: 50px;
 }
 .materialContainer .box #tabelaPedidos td, .materialContainer .box #tabelaPedidos th, .materialContainer .box #tabelaPedidos2 td, .materialContainer .box #tabelaPedidos2 th, .materialContainerMenu .box #tabelaPedidos td, .materialContainerMenu .box #tabelaPedidos th, .materialContainerMenu .box #tabelaPedidos2 td, .materialContainerMenu .box #tabelaPedidos2 th {
   text-align: center;
@@ -59,6 +68,7 @@ body {
 .materialContainer .box #tabelaPedidos td, .materialContainer .box #tabelaPedidos2 td, .materialContainerMenu .box #tabelaPedidos td, .materialContainerMenu .box #tabelaPedidos2 td {
   border-right: 1px solid #f8f8f8;
   font-size: 12px;
+  overflow: auto;
 }
 .materialContainer .box #tabelaPedidos th, .materialContainer .box #tabelaPedidos2 th, .materialContainerMenu .box #tabelaPedidos th, .materialContainerMenu .box #tabelaPedidos2 th {
   color: #000000;
@@ -132,6 +142,14 @@ body {
 .materialContainer .box #tabelaPedidos2 button:hover:nth-child(odd), .materialContainerMenu .box #tabelaPedidos2 button:hover:nth-child(odd) {
   color: #ff0000;
 }
+.materialContainer .box #container, .materialContainerMenu .box #container {
+  position: relative;
+  width: 1150px;
+  height: 350px;
+  display: block;
+  top: 50px;
+  transition: 0.15s;
+}
 .materialContainer .box-menu, .materialContainerMenu .box-menu {
   position: relative;
   width: 220px;
@@ -153,7 +171,7 @@ body {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #ED2553;
+  color: #001f66;
   position: relative;
   text-align: center;
   margin-bottom: 15px;
@@ -165,31 +183,20 @@ body {
   display: list-item;
   transform: perspective(1px) translateZ(0);
   position: relative;
-  transition: color 0.3s;
   cursor: pointer;
   font-size: 16px;
   text-align: center;
   border-radius: 5px;
   width: 205px;
-}
-.materialContainer .box-menu .button-menu:before, .materialContainerMenu .box-menu .button-menu:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: #01ff9d;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform 0.3s ease-out;
+  box-shadow: inset 0 0 0 0 #002f9c;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
 .materialContainer .box-menu .button-menu:hover, .materialContainerMenu .box-menu .button-menu:hover {
-  color: rgb(0, 0, 0);
-}
-.materialContainer .box-menu .button-menu:hover:before, .materialContainerMenu .box-menu .button-menu:hover:before {
-  transform: scaleX(1);
+  box-shadow: inset 400px 0 0 0 #002f9c;
+  color: white;
+  border-color: #001f66;
 }
 
 /*# sourceMappingURL=style.css.map */
