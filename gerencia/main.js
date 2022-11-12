@@ -46,7 +46,10 @@ async function getAllPostsPonto() {
     observacao.innerText = post.observacao;
     aprovado.innerText = post.aprovado
     button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
-    button.onclick = function (e) {
+    
+
+
+    button.onclick = function () {
       console.log(matriculaPonto.innerHTML)
       console.log(emailPonto.innerHTML)
 
@@ -60,10 +63,12 @@ async function getAllPostsPonto() {
           emailPonto: emailPonto.innerHTML,
       }),
       })
+      deletar()
+
     }
 
     button2.innerText = "Aprovar";
-    button2.onclick = function (e) {
+    button2.onclick = function () {
       console.log(matriculaPonto.innerHTML)
 
       fetch(`http://localhost:3000/justPonto/update/${matriculaPonto.innerHTML}`, {
@@ -77,7 +82,12 @@ async function getAllPostsPonto() {
         }),
 
       })
-    }
+      aprovacao()
+}
+
+function aprovacao(){
+  aprovado.innerText = "Aprovado pela gerencia"
+}
 
     tr.appendChild(matriculaPonto);
     tr.appendChild(nomePonto);
@@ -94,8 +104,13 @@ async function getAllPostsPonto() {
     tr.appendChild(button2);
     tr.appendChild(button);
 
+
+
     tabelaPedidos.appendChild(tr);
 
+    function deletar(){
+      tabelaPedidos.removeChild(tr)
+      }
 
   });
 }
@@ -155,6 +170,7 @@ async function getAllPostsFerias() {
           emailPonto: emailPonto.innerHTML,
       }),
       })
+      deletar()
     }
 
     button2.innerText = "Aprovar";
@@ -171,8 +187,11 @@ async function getAllPostsFerias() {
         }),
 
       })
+      aprovacao()
     }
-
+    function aprovacao(){
+      aprovado.innerText = "Aprovado pela gerencia"
+    }
     tr.appendChild(matriculaFerias);
     tr.appendChild(nomeFerias);
     tr.appendChild(areaAtuacaoFerias);
@@ -187,6 +206,9 @@ async function getAllPostsFerias() {
 
     tabelaPedidos2.appendChild(tr);
 
+    function deletar(){
+      tabelaPedidos.removeChild(tr)
+      }
 
   });
 }
