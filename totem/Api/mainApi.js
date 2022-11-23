@@ -20,8 +20,8 @@ app.use(express.json())
 let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth:{
-        user: "testeluwroblewski@gmail.com",
-        pass: "jdojzlkhzanwrpuh",
+        user: "",
+        pass: "",
     }
     })
     
@@ -47,10 +47,10 @@ app.get('/', (req, res) => {
 })
 
 
-const username = "teste";
-const password = encodeURIComponent("teste123");
-const cluster = "cluster0.1ylmc4y";
-const dbname = "ja";
+const username = "";
+const password = encodeURIComponent("");
+const cluster = "";
+const dbname = "";
 
 mongoose.connect(
     `mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`
