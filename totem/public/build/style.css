@@ -1,0 +1,187 @@
+body {
+  background-image: url(https://i2.wp.com/cdn.statically.io/img/wallpapercave.com/wp/wp2757874.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+p {
+  font-family: "Roboto", "Font Awesome 5 Free";
+  color: #919191;
+}
+
+.materialContainer {
+  width: 100%;
+  max-width: 580px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.materialContainer img {
+  display: block;
+  margin-left: -10px;
+  margin-right: auto;
+}
+.materialContainer .box {
+  position: relative;
+  width: 390px;
+  height: 620px;
+  top: 100px;
+  float: left;
+  padding: 5px 5px 35px 15px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.materialContainer .box #menu {
+  width: 380px;
+  position: relative;
+  left: 5px;
+  transition: 0.5s;
+}
+.materialContainer .box .title {
+  width: 100%;
+  float: left;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #001f66;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.materialContainer .box #justPonto, .materialContainer .box #justPonto2, .materialContainer .box #justPonto3, .materialContainer .box #justFerias, .materialContainer .box #justFerias2 {
+  width: 380px;
+  position: relative;
+  top: -270px;
+  left: 450px;
+  transition: 0.5s;
+}
+.materialContainer .box #justPonto input, .materialContainer .box #justPonto2 input, .materialContainer .box #justPonto3 input, .materialContainer .box #justFerias input, .materialContainer .box #justFerias2 input {
+  font-family: "Roboto", "Font Awesome 5 Free";
+  width: 95%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.materialContainer .box #justPonto select, .materialContainer .box #justPonto2 select, .materialContainer .box #justPonto3 select, .materialContainer .box #justFerias select, .materialContainer .box #justFerias2 select {
+  padding: 7px 40px 7px 12px;
+  width: 95%;
+  border: 1px solid #E8EAED;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.materialContainer .box #justFerias {
+  left: 450px;
+  top: -1350px;
+}
+.materialContainer .box #justFerias2 {
+  left: 450px;
+  top: -1720px;
+}
+.materialContainer .box #justPonto2 {
+  left: 450px;
+  top: -620px;
+}
+.materialContainer .box #justPonto3 {
+  left: 450px;
+  top: -980px;
+}
+.materialContainer .box .button {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin-left: auto;
+  z-index: 2;
+}
+.materialContainer .box .button.login button {
+  width: 100%;
+  line-height: 64px;
+  background-color: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.35);
+  font-weight: 900;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.55);
+  border-radius: 7px;
+  font-family: "Arial", "Font Awesome 5 Free";
+}
+.materialContainer .box .button.login button:hover {
+  color: #001f66;
+  border-color: #001f66;
+}
+.materialContainer .box .button button {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.materialContainer .box .button {
+  margin-top: 20px;
+}
+.materialContainer .box .button.login2 {
+  width: 70%;
+}
+.materialContainer .box .button.login2 button {
+  width: 100%;
+  left: -50px;
+  line-height: 64px;
+  background-color: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.35);
+  font-weight: 900;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.55);
+  border-radius: 7px;
+  margin-left: auto;
+}
+.materialContainer .box .button.login2 button:hover {
+  color: #001f66;
+  border-color: #001f66;
+}
+.materialContainer .box .button button {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.materialContainer #overlay {
+  position: absolute;
+  display: none;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2;
+  cursor: pointer;
+}
+.materialContainer #overlay #block_overlay {
+  width: 300px;
+  height: 300px;
+  margin-left: 55px;
+  margin-top: 120px;
+  background-color: white;
+  border: 1px;
+  border-radius: 15px;
+}
+.materialContainer #overlay #block_overlay #text_overlay {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.materialContainer #overlay #block_overlay #check {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
